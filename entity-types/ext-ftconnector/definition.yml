@@ -1,0 +1,30 @@
+domain: EXT
+type: FTCONNECTOR
+synthesis:
+  rules:
+  - compositeIdentifier:
+      separator: ":"
+      attributes:
+      - service
+      - account
+    name: service
+    conditions:
+    - attribute: account
+      present: true
+    - attribute: region
+      present: true
+    - attribute: application
+      value: "sherpa"
+
+  tags:
+    service:
+    account:
+    region:
+
+dashboardTemplates:
+  newRelic:
+    template: dashboard.json
+
+configuration:
+  entityExpirationTime: DAILY
+  alertable: true

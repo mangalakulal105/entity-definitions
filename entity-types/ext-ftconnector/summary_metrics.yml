@@ -1,0 +1,17 @@
+accountName:
+  tag:
+    key: account
+  title: Account
+  unit: STRING
+syncstatus:
+  goldenMetric: syncStatus
+  title: Sync Status
+  unit: MS
+syncduration:
+  goldenMetric: syncDuration
+  title: Sync Duration
+  unit: MS
+networkvolume:
+  goldenMetric: networkVolume
+  title: Network Volumne
+  unit: BYTES_PER_SECOND
